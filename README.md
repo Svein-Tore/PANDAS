@@ -103,21 +103,21 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode s. 10:
 ```python
  import pandas as pd
-    import matplotlib.pyplot s plt
-    from pyodide.http import open_url
-    import json
-    data=[
-            {"navn":"Per","adresse":"skoleveien 5","alder":;45,"hoyde":176,"vekt":79},
-            {"navn":"Ola","adresse":"skoleveien 6","alder":56,"hoyde":186,"vekt":89},
-            {"navn":"Hans","adresse":"skoleveien 8","alder":66,"hoyde":197,"vekt":99}
-    ]
-    df=DataFrame(data)    
-    farge=['r','g','#0000FF']
-    linje=['g','b','r']
-    fig,ax=plt.subplots(figsize=(8,3),layout='constrained')
-    for i i range (0,len(df.index)):
-        ax.bar(df.loc[i,"navn"],df.loc[i,"vekt"],color=farge[i],edgecolor=linje[i],df.loc[i,"vekt"],width=0.2)
-    ax.legend(bbox_to_anchor=(1,1))
-    ax.set_title("Vekt for ulike personer")
-    display(plt)
+ import matplotlib.pyplot s plt
+ from pyodide.http import open_url
+ import json
+ data=[
+         {"navn":"Per","adresse":"skoleveien 5","alder":;45,"hoyde":176,"vekt":79},
+         {"navn":"Ola","adresse":"skoleveien 6","alder":56,"hoyde":186,"vekt":89},
+         {"navn":"Hans","adresse":"skoleveien 8","alder":66,"hoyde":197,"vekt":99}
+ ]
+ df=DataFrame(data)    
+ farge=['r','g','#0000FF']
+ linje=['g','b','r']
+ fig,ax=plt.subplots(figsize=(8,3),layout='constrained')
+ for i i range (0,len(df.index)):
+     ax.bar(df.loc[i,"navn"],df.loc[i,"vekt"],color=farge[i],edgecolor=linje[i],df.loc[i,"vekt"],width=0.2)
+ ax.legend(bbox_to_anchor=(1,1))
+ ax.set_title("Vekt for ulike personer")
+ display(plt)
 ```    
