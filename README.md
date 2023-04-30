@@ -258,5 +258,8 @@ display(df1.style.apply(row_style, axis=1).hide(axis="columns",subset='color').h
    import json
    data=json.load(open_url("https://api.nilu.no/aq/historical/2022-02-02/2022-02-03/ids/3124"))
    df=pd.json_normalize(data,record_path='values') 
-   df2=df['index'].value_counts().div(len)df.index).multiply(100) 
+   df2=df['index'].value_counts().div(len(df.index)).multiply(100)
+   fig,ax=plt.subplots()
+   ax.pie(df2,labels=['lav','moderat','høy'],autopct='%1.1f%%',colors=['#6ee86e','#ff9900','#ff0000']) 
+   display(plt) 
 ```    
