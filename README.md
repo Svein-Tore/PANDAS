@@ -102,9 +102,9 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ```    
 ### kode s. 10:
 ```python
-    import pandas as pd
-    import matplotlib.pyplot s plt
-    from pyodide.http import open_url
+   import pandas as pd
+   import matplotlib.pyplot s plt
+   from pyodide.http import open_url
    import json
    data=[
             {"navn":"Per","adresse":"skoleveien 5","alder":;45,"hoyde":176,"vekt":79},
