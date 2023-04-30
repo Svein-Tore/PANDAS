@@ -1,7 +1,7 @@
 # Pandas for IT-2
 Vi har i dette faget jobbet med JavaScript.  Dette er et programmeringsspråk som fungerer bra for å innhente og presentere reelle datasett. Men når man skal analysere data så er ikke JavaScript et spesielt godt verktøy.  Da er det nyttig å bruke et verktøy som heter Pandas.  Dette verktøyet er laget for Python.  Vi skal derfor gjøre noe morsomt. Vi skal bruke noe som heter PyScript.  Dette er Python i nettleseren.  Hvordandette gjøres er besrkvet  i psdf dokumentet pandas.pdf som du finner under filer idette repositoriet.  I dette pedf dokumenteter det fler kdoesnutter. Siden diss ikke kan lastes ned er disse kodesnuttene lagt inn her og kan enkelt lastes ned.  Sidetallene henviser til sidetallet i pdf dokumentet.
 
-##Hovedkode
+## Hovedkode
 Hovedkoden er et HTML dokument (se  s. 2).  Vi legger Python koden vår inn i taggen som heter <py-repl>. Når vi bruker <py-repl> taggen vil Pythnon koden vises på nettsiden i ewn REPL (Read Evaluate Print Loop, ala det vi har i Jupyter Notebook).  Dette kan vi endre ved på erstate <py-repl> taggen med en <py-script> tagg.
     
 ```html
