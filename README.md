@@ -176,7 +176,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
    df1=df[['fromTime','toTime','value','color','station']]
    display(df1)
 ```
-### kode s. 16:
+### kode s. 19:
 ```python
    import pandas as pd
    import matplotlib.pyplot s plt
@@ -193,4 +193,61 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
    df1=df[['fromTime','toTime','value','color']]
    display(df1.style.apply(row_style, axis=1))
 ```    
-    
+### kode s. 21
+```python
+   import pandas as pd
+   import matplotlib.pyplot s plt
+   from pyodide.http import open_url
+   import json
+   def row_style(row):
+       return pd.Series(
+       'background-color:#'+row.color+';'+
+       'color:blue;'+
+       'font-size:20px;'
+       ,row.index)
+   data=json.load(open_url("https://api.nilu.no/aq/historical/2022-02-02/2022-02-03/ids/3124"))
+   df=pd.json_normalize(data,record_path='values')
+   df1=df[['fromTime','toTime','value','color']]
+display(df1.style.apply(row_style, axis=1).hide(axis="columns",subset='color').hide(axis="index").set_table_styles(
+    [
+        {'selector':'th,td','props':
+         'border: 1px solid black;'    
+        }
+    ]
+ ).set_table_attributes('style="border-collapse:collapse"'))   
+```    
+### kode s. 23:
+```python
+   import pandas as pd
+   import matplotlib.pyplot s plt
+   from pyodide.http import open_url
+   import json
+   data=json.load(open_url("https://api.nilu.no/aq/historical/2022-02-02/2022-02-03/ids/3124"))
+   df=pd.json_normalize(data,record_path='values')
+   avstand=-0.3
+   fig,ax=plt.subplots(figsize=(11,6),layout='constrained') 
+   for i in range (0,len(df.index)):
+       ax.bar(df.loc[i,"fromTime"],df.loc[i,"value"],color="#"+df.loc[i,"color"],width=0.5)
+   disply(plt) 
+```    
+### Kode s. 25:
+### kode s. 23:
+```python
+   import pandas as pd
+   import matplotlib.pyplot s plt
+   from pyodide.http import open_url
+   import json
+   data=json.load(open_url("https://api.nilu.no/aq/historical/2022-02-02/2022-02-03/ids/3124"))
+   df=pd.json_normalize(data,record_path='values')
+   avstand=-0.3
+   fig,ax=plt.subplots(figsize=(11,6),layout='constrained') 
+   for i in range (0,len(df.index)):
+       ax.bar(df.loc[i,"fromTime"],df.loc[i,"value"],color="#"+df.loc[i,"color"],width=0.5)
+       ax.text(avstand,df.loc[i,"value"]+1,df.loc[i,"value"])
+       avstand=avstand+1
+    plt.xticks(rotation=90)
+    plt.title('luftkbvalitetsindeks')
+    plt.ylabel('luftkvalitetsindeks (mikrogram/m^3')
+    plt.xlabel('dato')
+   disply(plt) 
+```        
