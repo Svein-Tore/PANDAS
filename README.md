@@ -250,3 +250,13 @@ display(df1.style.apply(row_style, axis=1).hide(axis="columns",subset='color').h
     plt.xlabel('dato')
    disply(plt) 
 ```        
+### kode s. 27:
+```python    
+   import pandas as pd
+   import matplotlib.pyploy as plt
+   from pyodide.http import open_url
+   import json
+   data=json.load(open_url("https://api.nilu.no/aq/historical/2022-02-02/2022-02-03/ids/3124"))
+   df=pd.json_normalize(data,record_path='values') 
+   df2=df['index'].value_counts().div(len)df.index).multiply(100) 
+```    
