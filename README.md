@@ -245,7 +245,7 @@ display(df1.style.apply(row_style, axis=1).hide(axis="columns",subset='color').h
        ax.text(avstand,df.loc[i,"value"]+1,df.loc[i,"value"])
        avstand=avstand+1
     plt.xticks(rotation=90)
-    plt.title('luftkbvalitetsindeks')
+    plt.title('luftkvalitetsindeks')
     plt.ylabel('luftkvalitetsindeks (mikrogram/m^3')
     plt.xlabel('dato')
    disply(plt) 
