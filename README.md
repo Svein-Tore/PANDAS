@@ -24,9 +24,11 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 <py-repl> kan erstatters med <py-script>. Da vises ikke python koden.
 -->
 <py-repl>
-    ```python
+```
+```python
     print("Hello World")
-    ```
+```
+```html
 </py-repl>
 </body>
 </html>
