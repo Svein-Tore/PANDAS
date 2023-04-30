@@ -36,3 +36,13 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 </body>
 </html>
 ```
+## kode s. 3:
+```python    
+    import pandas as pd
+    import matplotlib.pyplot s plt
+    from pyodide.http import open_url
+    import json
+    data=[{"navn":"Per","adresse":"skoleveien 5"},{"navn":"Ola","adresse":"skoleveien 6"}]
+    df=DataFrame(data)
+    display(df)
+```    
