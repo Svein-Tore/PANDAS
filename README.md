@@ -172,8 +172,25 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
    from pyodide.http import open_url
    import json
    data=json.load(open_url("https://api.nilu.no/aq/historical/2022-02-02/2022-02-03/ids/3124"))
-   df=pd.json_normalize( data,record_path=["values"],meta=["station","zone"])
+   df=pd.json_normalize(data,record_path=["values"],meta=["station","zone"])
    df1=df[['fromTime','toTime','value','color','station']]
    display(df1)
 ```
+### kode s. 16:
+```python
+   import pandas as pd
+   import matplotlib.pyplot s plt
+   from pyodide.http import open_url
+   import json
+   def row_style(row):
+       return pd.Series(
+       'background-color:#'+row.color+';'+
+       'color:blue;'+
+       'font-size:20px;'
+       ,row.index)
+   data=json.load(open_url("https://api.nilu.no/aq/historical/2022-02-02/2022-02-03/ids/3124"))
+   df=pd.json_normalize(data,record_path='values')
+   df1=df[['fromTime','toTime','value','color']]
+   display(df1.style.apply(row_style, axis=1))
+```    
     
