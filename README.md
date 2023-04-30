@@ -231,7 +231,6 @@ display(df1.style.apply(row_style, axis=1).hide(axis="columns",subset='color').h
    disply(plt) 
 ```    
 ### Kode s. 25:
-### kode s. 23:
 ```python
    import pandas as pd
    import matplotlib.pyplot s plt
