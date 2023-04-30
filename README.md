@@ -263,3 +263,26 @@ display(df1.style.apply(row_style, axis=1).hide(axis="columns",subset='color').h
    ax.pie(df2,labels=['lav','moderat','høy'],autopct='%1.1f%%',colors=['#6ee86e','#ff9900','#ff0000']) 
    display(plt) 
 ```    
+## kode s. 28
+```python
+import js
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+from pyodide.http import open_url
+df=pd.read_json(open_url("./05.json"))
+s=df.start_station_name.value_counts()
+mest_pop=s.head(3)
+minst_pop=s.tail(3)
+s=pd.concat([mest_pop,minst_pop])
+fig,ax=plt.subplots()
+ax.bar(s.index,s,color=['r','g','b','y','c','m'])
+ax.set(title='Tre mest og minst populære startlokasjoner')
+ax.bar_label(ax.containers[0])
+plt.xlabel('startlokasjon')
+plt.ylabel('Antall (popularitet)')
+plt.xticks(rotation=30)
+plt.margins(0.05,0.1)
+plt.tight_layout()
+display(plt)
+```
