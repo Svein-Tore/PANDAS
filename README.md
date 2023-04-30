@@ -263,7 +263,7 @@ display(df1.style.apply(row_style, axis=1).hide(axis="columns",subset='color').h
    ax.pie(df2,labels=['lav','moderat','høy'],autopct='%1.1f%%',colors=['#6ee86e','#ff9900','#ff0000']) 
    display(plt) 
 ```    
-## kode s. 28
+## kode s. 29
 ```python
 import js
 import pandas as pd
