@@ -319,3 +319,26 @@ plt.title('Antall turer totalt per dag')
 plt.ylabel('Antall turer')
 display(plt)
 ```    
+### kode s. 32
+```python
+import js
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+from pyodide.http import open_url
+df=pd.read_json(open_url("./05.json"))
+s=df.start_station_name.value_counts()
+mest_pop=s.head(3)
+minst_pop=s.tail(3)
+s=pd.concat([mest_pop,minst_pop])
+fig,ax=plt.subplots()
+ax.bar(s.index,s,color=['r','g','b','y','c','m'])
+for bars in ax.containers:
+    ax.bar_label(bars)
+plt.title('Tre mest og minst populære startlokasjoner')
+plt.xlabel('startlokasjon')
+plt.ylabel('Antall (popularitet)')
+plt.xticks(rotation=30)
+plt.tight_layout()
+display(plt)
+```    
