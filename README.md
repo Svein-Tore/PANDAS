@@ -361,3 +361,23 @@ plt.ylabel('Minutter')
 plt.title('Sluttlokasjoner med høyeste gjennomsnittsvarighet')
 display(plt)
 ```    
+### kode s. 34
+```python
+import js
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+from pyodide.http import open_url
+df=pd.read_json(open_url("./05.json"))
+df['dato']=pd.to_datetime(df['started_at'])
+df['ukedag_nr']=df['dato'].dt.weekday
+s=df['ukedag_nr'].value_counts().sort_index()
+dager=['mandag','tirsdag','onsdag','torsdag','fredag','lørdag','søndag']
+fig,ax=plt.subplots()
+ax.bar(dager,s,color=['r','g','b','c','m','y','k'])
+for bars in ax.containers:
+    ax.bar_label(bars)
+plt.title('Antall turer totalt per dag')
+plt.ylabel('Antall turer')
+display(plt)
+```    
