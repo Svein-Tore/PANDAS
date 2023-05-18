@@ -39,7 +39,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode s. 3:
 ```python    
     import pandas as pd
-    import matplotlib.pyplot s plt
+    import matplotlib.pyplot as plt
     from pyodide.http import open_url
     import json
     data=[{"navn":"Per","adresse":"skoleveien 5"},{"navn":"Ola","adresse":"skoleveien 6"}]
