@@ -292,7 +292,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from pyodide.http import open_url
 df=pd.read_json(open_url("./05.json"))
-df2=df.groupby('end_station_name').mean().sort_values('duration',ascending=False).head(3)
+df2=df.groupby('end_station_name').mean(numeric_only="True").sort_values('duration',ascending=False).head(3)
 df2['min']=df2['duration'].div(60).round(0)
 fig,ax=plt.subplots()
 ax.bar(df2.index,df2['min'],color=['r','g','b'])
