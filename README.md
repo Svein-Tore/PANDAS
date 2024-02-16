@@ -39,6 +39,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode s. 3:
 ```python    
     import pandas as pd
+    import ninja2
     import matplotlib.pyplot as plt
     from pyodide.http import open_url
     import json
@@ -49,6 +50,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode nr. 1 s. 6:
 ```python    
     import pandas as pd
+    import ninja2
     import matplotlib.pyplot as plt
     from pyodide.http import open_url
     import json
@@ -59,6 +61,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode nr. 2 s. 6:
 ```python    
     import pandas as pd
+    import ninja2
     import matplotlib.pyplot as plt
     from pyodide.http import open_url
     import json
@@ -69,6 +72,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode nr. 3 s. 6:
 ```python    
     import pandas as pd
+    import ninja2
     import matplotlib.pyplot as plt
     from pyodide.http import open_url
     import json
@@ -79,6 +83,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode nr. 1s. 7:
 ```python    
     import pandas as pd
+    import ninja2
     import matplotlib.pyplot as plt
     from pyodide.http import open_url
     import json
@@ -89,6 +94,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode s. 9:
 ```python
     import pandas as pd
+    import ninja2
     import matplotlib.pyplot as plt
     from pyodide.http import open_url
     import json
@@ -103,6 +109,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode s. 10:
 ```python
    import pandas as pd
+   import ninja2 
    import matplotlib.pyplot as plt
    from pyodide.http import open_url
    import json
@@ -124,6 +131,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode s. 12:
 ```python
    import pandas as pd
+   import ninja2 
    import matplotlib.pyplot as plt
    from pyodide.http import open_url
    import json
@@ -140,6 +148,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode nr. 1 s. 14:
 ```python
    import pandas as pd
+   import ninja2 
    import matplotlib.pyplot as plt
    from pyodide.http import open_url
    import json
@@ -149,6 +158,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode nr. 2 s. 14:
 ```python
    import pandas as pd
+   import ninja2 
    import matplotlib.pyplot as plt
    from pyodide.http import open_url
    import json
@@ -158,6 +168,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode s. 15:
 ```python
    import pandas as pd
+   import ninja2 
    import matplotlib.pyplot as plt
    from pyodide.http import open_url
    import json
@@ -168,6 +179,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode s. 16:
 ```python
    import pandas as pd
+   import ninja2 
    import matplotlib.pyplot as plt
    from pyodide.http import open_url
    import json
@@ -179,6 +191,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode s. 19:
 ```python
    import pandas as pd
+   import ninja2 
    import matplotlib.pyplot as plt
    from pyodide.http import open_url
    import json
@@ -196,6 +209,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode s. 21
 ```python
    import pandas as pd
+   import ninja2 
    import matplotlib.pyplot as plt
    from pyodide.http import open_url
    import json
@@ -219,6 +233,7 @@ display(df1.style.apply(row_style, axis=1).hide(axis="columns",subset='color').h
 ### kode s. 23:
 ```python
    import pandas as pd
+   import ninja2 
    import matplotlib.pyplot as plt
    from pyodide.http import open_url
    import json
@@ -233,6 +248,7 @@ display(df1.style.apply(row_style, axis=1).hide(axis="columns",subset='color').h
 ### Kode s. 25:
 ```python
    import pandas as pd
+   import ninja2 
    import matplotlib.pyplot as plt
    from pyodide.http import open_url
    import json
@@ -253,6 +269,7 @@ display(df1.style.apply(row_style, axis=1).hide(axis="columns",subset='color').h
 ### kode s. 27:
 ```python    
    import pandas as pd
+   import ninja2 
    import matplotlib.pyploy as plt
    from pyodide.http import open_url
    import json
@@ -266,6 +283,7 @@ display(df1.style.apply(row_style, axis=1).hide(axis="columns",subset='color').h
 ## kode s. 29
 ```python
 import js
+import ninja2
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -287,6 +305,7 @@ display(plt)
 ## Kode s. 30
 ```python
 import js
+import ninja2
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -304,6 +323,7 @@ display(plt)
 ### kode s. 31
 ```python
 import js
+import ninja2
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -322,6 +342,7 @@ display(plt)
 ### kode s. 32
 ```python
 import js
+import ninja2
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -345,6 +366,7 @@ display(plt)
 ### kode s. 33
 ```python
 import js
+import ninja2
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -364,6 +386,7 @@ display(plt)
 ### kode s. 34
 ```python
 import js
+import ninja2
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
