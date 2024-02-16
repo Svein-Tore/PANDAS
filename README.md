@@ -49,7 +49,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode nr. 1 s. 6:
 ```python    
     import pandas as pd
-    import matplotlib.pyplot s plt
+    import matplotlib.pyplot as plt
     from pyodide.http import open_url
     import json
     data=[{"navn":"Per","adresse":"skoleveien 5"},{"navn":"Ola","adresse":"skoleveien 6"}]
@@ -59,7 +59,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode nr. 2 s. 6:
 ```python    
     import pandas as pd
-    import matplotlib.pyplot s plt
+    import matplotlib.pyplot as plt
     from pyodide.http import open_url
     import json
     data=[{"navn":"Per","adresse":"skoleveien 5"},{"navn":"Ola","adresse":"skoleveien 6"}]
@@ -69,7 +69,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode nr. 3 s. 6:
 ```python    
     import pandas as pd
-    import matplotlib.pyplot s plt
+    import matplotlib.pyplot as plt
     from pyodide.http import open_url
     import json
     data=[{"navn":"Per","adresse":"skoleveien 5"},{"navn":"Ola","adresse":"skoleveien 6"}]
@@ -79,7 +79,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode nr. 1s. 7:
 ```python    
     import pandas as pd
-    import matplotlib.pyplot s plt
+    import matplotlib.pyplot as plt
     from pyodide.http import open_url
     import json
     data=[{"navn":"Per","adresse":"skoleveien 5"},{"navn":"Ola","adresse":"skoleveien 6"}]
@@ -89,7 +89,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode s. 9:
 ```python
     import pandas as pd
-    import matplotlib.pyplot s plt
+    import matplotlib.pyplot as plt
     from pyodide.http import open_url
     import json
     data=[
@@ -103,7 +103,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode s. 10:
 ```python
    import pandas as pd
-   import matplotlib.pyplot s plt
+   import matplotlib.pyplot as plt
    from pyodide.http import open_url
    import json
    data=[
@@ -124,7 +124,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode s. 12:
 ```python
    import pandas as pd
-   import matplotlib.pyplot s plt
+   import matplotlib.pyplot as plt
    from pyodide.http import open_url
    import json
    df=pd.read_json(open_url("navn.json"))
@@ -140,7 +140,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode nr. 1 s. 14:
 ```python
    import pandas as pd
-   import matplotlib.pyplot s plt
+   import matplotlib.pyplot as plt
    from pyodide.http import open_url
    import json
    df=pd.read_json(open_url("https://api.nilu.no/aq/historical/2022-02-02/2022-02-03/ids/3124"))
@@ -149,7 +149,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode nr. 2 s. 14:
 ```python
    import pandas as pd
-   import matplotlib.pyplot s plt
+   import matplotlib.pyplot as plt
    from pyodide.http import open_url
    import json
    df=pd.read_json(open_url("https://api.nilu.no/aq/historical/2022-02-02/2022-02-03/ids/3124"))
@@ -158,7 +158,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode s. 15:
 ```python
    import pandas as pd
-   import matplotlib.pyplot s plt
+   import matplotlib.pyplot as plt
    from pyodide.http import open_url
    import json
    data=json.load(open_url("https://api.nilu.no/aq/historical/2022-02-02/2022-02-03/ids/3124"))
@@ -168,7 +168,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode s. 16:
 ```python
    import pandas as pd
-   import matplotlib.pyplot s plt
+   import matplotlib.pyplot as plt
    from pyodide.http import open_url
    import json
    data=json.load(open_url("https://api.nilu.no/aq/historical/2022-02-02/2022-02-03/ids/3124"))
@@ -179,7 +179,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode s. 19:
 ```python
    import pandas as pd
-   import matplotlib.pyplot s plt
+   import matplotlib.pyplot as plt
    from pyodide.http import open_url
    import json
    def row_style(row):
@@ -196,7 +196,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
 ### kode s. 21
 ```python
    import pandas as pd
-   import matplotlib.pyplot s plt
+   import matplotlib.pyplot as plt
    from pyodide.http import open_url
    import json
    def row_style(row):
@@ -219,7 +219,7 @@ display(df1.style.apply(row_style, axis=1).hide(axis="columns",subset='color').h
 ### kode s. 23:
 ```python
    import pandas as pd
-   import matplotlib.pyplot s plt
+   import matplotlib.pyplot as plt
    from pyodide.http import open_url
    import json
    data=json.load(open_url("https://api.nilu.no/aq/historical/2022-02-02/2022-02-03/ids/3124"))
@@ -233,7 +233,7 @@ display(df1.style.apply(row_style, axis=1).hide(axis="columns",subset='color').h
 ### Kode s. 25:
 ```python
    import pandas as pd
-   import matplotlib.pyplot s plt
+   import matplotlib.pyplot as plt
    from pyodide.http import open_url
    import json
    data=json.load(open_url("https://api.nilu.no/aq/historical/2022-02-02/2022-02-03/ids/3124"))
