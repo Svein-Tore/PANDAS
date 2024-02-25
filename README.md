@@ -55,7 +55,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
     from pyodide.http import open_url
     import json
     data=[{"navn":"Per","adresse":"skoleveien 5"},{"navn":"Ola","adresse":"skoleveien 6"}]
-    df=DataFrame(data)
+    df=pd.DataFrame(data)
     display(df.loc[:,["navn"]])
 ```   
 ### kode nr. 2 s. 6:
@@ -66,7 +66,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
     from pyodide.http import open_url
     import json
     data=[{"navn":"Per","adresse":"skoleveien 5"},{"navn":"Ola","adresse":"skoleveien 6"}]
-    df=DataFrame(data)
+    df=pd.DataFrame(data)
     display(df.loc[[0],["navn"]])
 ```   
 ### kode nr. 3 s. 6:
@@ -77,7 +77,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
     from pyodide.http import open_url
     import json
     data=[{"navn":"Per","adresse":"skoleveien 5"},{"navn":"Ola","adresse":"skoleveien 6"}]
-    df=DataFrame(data)
+    df=pd.DataFrame(data)
     display(df.loc[[0,1],["navn"]])
 ```   
 ### kode nr. 1s. 7:
@@ -88,7 +88,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
     from pyodide.http import open_url
     import json
     data=[{"navn":"Per","adresse":"skoleveien 5"},{"navn":"Ola","adresse":"skoleveien 6"}]
-    df=DataFrame(data)
+    df=pd.DataFrame(data)
     display(df.loc[[1,0],["navn"]])
 ```
 ### kode s. 9:
@@ -103,7 +103,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
             {"navn":"Ola","adresse":"skoleveien 6","alder":56,"hoyde":186,"vekt":89},
             {"navn":"Hans","adresse":"skoleveien 8","alder":66,"hoyde":197,"vekt":99}
     ]
-    df=DataFrame(data)
+    df=pd.DataFrame(data)
     display(df)
 ```    
 ### kode s. 10:
@@ -118,7 +118,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
             {"navn":"Ola","adresse":"skoleveien 6","alder":56,"hoyde":186,"vekt":89},
             {"navn":"Hans","adresse":"skoleveien 8","alder":66,"hoyde":197,"vekt":99}
     ]
-    df=DataFrame(data)    
+    df=pd.DataFrame(data)    
     farge=['r','g','#0000FF']
     linje=['g','b','r']
     fig,ax=plt.subplots(figsize=(8,3),layout='constrained')
