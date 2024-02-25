@@ -44,7 +44,7 @@ Når vi bruker repl så får vi vist Pyrthon koden i nettleseren
     from pyodide.http import open_url
     import json
     data=[{"navn":"Per","adresse":"skoleveien 5"},{"navn":"Ola","adresse":"skoleveien 6"}]
-    df=DataFrame(data)
+    df=pd.DataFrame(data)
     display(df)
 ```    
 ### kode nr. 1 s. 6:
